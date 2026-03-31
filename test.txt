@@ -1,0 +1,10 @@
+Hello, World!
+
+This is a sample text file created on 2026-03-31.
+
+Here are some fun facts:
+- The Earth is approximately 4.5 billion years old.
+- Light travels at 299,792,458 meters per second.
+- There are more stars in the universe than grains of sand on Earth.
+
+Feel free to edit or delete this file.
