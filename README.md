@@ -1,73 +1,73 @@
-# 🏷️ HTML Tag Counter
+# 🏷️ HTML-Tag-Zähler
 
-A fast CLI tool that fetches a webpage and produces a categorized, visual breakdown of every HTML tag it contains — complete with counts and bar charts, right in your terminal.
+Ein schnelles CLI-Tool, das eine Webseite abruft und eine kategorisierte, visuelle Aufschlüsselung aller enthaltenen HTML-Tags erstellt — inklusive Anzahl und Balkendiagrammen direkt im Terminal.
 
-## Example Output
+## Beispielausgabe
 
 ```
-🌐 Fetching: https://ianbull.com/
+🌐 Abrufen: https://ianbull.com/
 
-✅ Fetched 19.3 KB of HTML
+✅ 19.3 KB HTML abgerufen
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  TAG ANALYSIS FOR https://ianbull.com/
+  TAG-ANALYSE FÜR https://ianbull.com/
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  Total tags found : 181
-  Unique tag types : 30
+  Gefundene Tags gesamt : 181
+  Eindeutige Tag-Typen  : 30
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📄 Document  (3 total)
+📄 Dokument  (3 gesamt)
   ────────────────────────────────────────
   <html              1  █
   <head              1  █
   <body              1  █
 
-🏗️  Structural  (46 total)
+🏗️  Struktur  (46 gesamt)
   ────────────────────────────────────────
   <div              23  ███████████████████████
   <span             16  ████████████████
   ...
 ```
 
-## Requirements
+## Voraussetzungen
 
-- [Bun](https://bun.sh) v1.0 or later
+- [Bun](https://bun.sh) v1.0 oder neuer
 
-## Usage
+## Verwendung
 
 ```bash
 bun run tag-counter.ts
 ```
 
-The target URL is set at the top of `tag-counter.ts`:
+Die Ziel-URL ist oben in `tag-counter.ts` festgelegt:
 
 ```ts
 const URL = "https://ianbull.com/";
 ```
 
-Change it to any URL you want to analyze.
+Ändere sie auf eine beliebige URL, die du analysieren möchtest.
 
-## Tag Categories
+## Tag-Kategorien
 
-Tags are grouped into eight categories:
+Tags werden in acht Kategorien gruppiert:
 
-| Category | Examples |
+| Kategorie | Beispiele |
 |---|---|
-| 📄 Document | `html`, `head`, `body` |
-| 🏗️ Structural | `div`, `span`, `section`, `header`, `nav`, `main`, `footer`, … |
+| 📄 Dokument | `html`, `head`, `body` |
+| 🏗️ Struktur | `div`, `span`, `section`, `header`, `nav`, `main`, `footer`, … |
 | 📝 Text | `p`, `a`, `h1`–`h6`, `strong`, `em`, `code`, `blockquote`, … |
-| 📋 List | `ul`, `ol`, `li`, `dl`, `dt`, `dd`, `menu` |
-| 🖼️ Media | `img`, `video`, `audio`, `svg`, `canvas`, `iframe`, … |
-| 📊 Table | `table`, `thead`, `tbody`, `tr`, `th`, `td`, … |
-| 📬 Form | `form`, `input`, `button`, `select`, `textarea`, … |
-| 🔧 Metadata | `meta`, `title`, `link`, `script`, `style`, … |
+| 📋 Liste | `ul`, `ol`, `li`, `dl`, `dt`, `dd`, `menu` |
+| 🖼️ Medien | `img`, `video`, `audio`, `svg`, `canvas`, `iframe`, … |
+| 📊 Tabelle | `table`, `thead`, `tbody`, `tr`, `th`, `td`, … |
+| 📬 Formular | `form`, `input`, `button`, `select`, `textarea`, … |
+| 🔧 Metadaten | `meta`, `title`, `link`, `script`, `style`, … |
 
-Any tag not matched to a known category is listed under **❓ Other**.
+Jedes Tag, das keiner bekannten Kategorie zugeordnet wird, wird unter **❓ Sonstiges** aufgeführt.
 
-## How It Works
+## So funktioniert’s
 
-1. **Fetch** — Downloads the raw HTML of the target URL using the native `fetch` API.
-2. **Extract** — Scans the HTML with a regex to collect every opening tag name.
-3. **Count** — Tallies occurrences of each unique tag.
-4. **Categorize** — Maps each tag to its category using the `TAG_CATEGORIES` lookup table.
-5. **Display** — Prints a sorted, bar-chart summary to stdout (tags within each category are sorted by count, descending).
+1. **Abrufen** — Lädt das rohe HTML der Ziel-URL mit der nativen `fetch`-API herunter.
+2. **Extrahieren** — Durchsucht das HTML mit einem Regex, um jeden öffnenden Tag-Namen zu sammeln.
+3. **Zählen** — Ermittelt die Häufigkeit jedes eindeutigen Tags.
+4. **Kategorisieren** — Ordnet jedes Tag über die `TAG_CATEGORIES`-Lookup-Tabelle seiner Kategorie zu.
+5. **Ausgeben** — Gibt eine sortierte Zusammenfassung mit Balkendiagrammen auf stdout aus (Tags innerhalb jeder Kategorie sind nach Häufigkeit absteigend sortiert).
