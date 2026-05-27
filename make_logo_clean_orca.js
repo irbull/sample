@@ -1,0 +1,90 @@
+const fs = require('fs');
+const sharp = require('sharp');
+
+const size = 1600;
+
+const svg = `<?xml version="1.0" encoding="UTF-8"?>
+<svg width="${size}" height="${size}" viewBox="0 0 1600 1600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path id="topArc" d="M 120 800 A 680 680 0 0 1 1480 800" />
+    <path id="botArc" d="M 1480 800 A 680 680 0 0 1 120 800" />
+  </defs>
+
+  <!-- Circular badge -->
+  <circle cx="800" cy="800" r="770" fill="#0F2742"/>
+  <circle cx="800" cy="800" r="640" fill="#00A7B5"/>
+  <circle cx="800" cy="800" r="560" fill="#EAF7FA"/>
+
+  <!-- subtle softball seam cues -->
+  <path d="M 550 515 C 420 680, 420 930, 550 1085" fill="none" stroke="#F25A4A" stroke-width="12" stroke-linecap="round" opacity="0.75"/>
+  <path d="M 1050 515 C 1180 680, 1180 930, 1050 1085" fill="none" stroke="#F25A4A" stroke-width="12" stroke-linecap="round" opacity="0.75"/>
+
+  <!-- modern orca mark -->
+  <path d="M 360 980
+           C 470 815, 650 700, 860 665
+           C 1045 635, 1200 690, 1270 780
+           C 1140 780, 1015 825, 930 902
+           C 845 980, 740 1046, 610 1072
+           C 500 1094, 412 1078, 360 980 Z"
+        fill="#0F2742"/>
+
+  <path d="M 355 978
+           C 294 927, 226 900, 170 920
+           C 213 972, 277 1013, 343 1024 Z"
+        fill="#0F2742"/>
+
+  <path d="M 345 950
+           C 278 862, 222 815, 170 824
+           C 200 885, 257 932, 332 969 Z"
+        fill="#0F2742"/>
+
+  <path d="M 758 716
+           C 776 590, 822 500, 894 430
+           C 906 553, 896 654, 862 742 Z"
+        fill="#0F2742"/>
+
+  <path d="M 856 914
+           C 940 940, 1018 995, 1040 1062
+           C 952 1043, 872 1004, 820 943 Z"
+        fill="#0F2742"/>
+
+  <!-- orca white patches -->
+  <path d="M 865 780
+           C 930 758, 980 790, 1007 840
+           C 940 851, 890 841, 845 810 Z"
+        fill="#FFFFFF"/>
+
+  <path d="M 628 932
+           C 760 880, 920 900, 1010 980
+           C 918 1032, 756 1050, 606 1010 Z"
+        fill="#FFFFFF"/>
+
+  <!-- dynamic wave accent -->
+  <path d="M 435 1120 C 650 1060, 955 1060, 1170 1120" fill="none" stroke="#F25A4A" stroke-width="22" stroke-linecap="round"/>
+
+  <!-- ring text -->
+  <text font-family="Arial, Helvetica, sans-serif" font-size="90" font-weight="700" fill="#FFFFFF" letter-spacing="3">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">VANCOUVER ISLAND</textPath>
+  </text>
+
+  <text font-family="Arial, Helvetica, sans-serif" font-size="110" font-weight="800" fill="#FFFFFF" letter-spacing="3">
+    <textPath href="#botArc" startOffset="50%" text-anchor="middle">ISLANDERS</textPath>
+  </text>
+
+  <!-- side dots -->
+  <circle cx="187" cy="800" r="18" fill="#FFFFFF"/>
+  <circle cx="1413" cy="800" r="18" fill="#FFFFFF"/>
+
+  <!-- small descriptor -->
+  <text x="800" y="1248" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700" fill="#0F2742" letter-spacing="4">GIRLS SOFTBALL</text>
+</svg>`;
+
+const svgPath = '/workspace/vancouver_island_islanders_logo_clean_modern.svg';
+const pngPath = '/workspace/vancouver_island_islanders_logo_clean_modern.png';
+
+(async () => {
+  fs.writeFileSync(svgPath, svg, 'utf8');
+  await sharp(Buffer.from(svg)).png({ compressionLevel: 9 }).toFile(pngPath);
+  console.log(svgPath);
+  console.log(pngPath);
+})();
