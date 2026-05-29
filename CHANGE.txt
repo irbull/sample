@@ -1,0 +1,28 @@
+Changelog
+=========
+
+This changelog summarizes the commit history on the `main` branch.
+
+2026-05-12
+----------
+- Added `.gitignore` for testing (`foo.txt` ignore entry).
+- Commit: `c96052e` — 🙈 Add foo.txt to the ignore file for testing
+
+2026-03-31
+----------
+- Added `test.txt`.
+- Commit: `8526b64` — Changes from Crucible agent
+
+2026-03-25
+----------
+- Updated `README.md`.
+- Commit: `bbb5ea0` — Changes from Crucible agent
+
+- Added `results.txt`.
+- Commit: `da7d33c` — Changes from Crucible agent
+
+- Added `tag-counter.ts`.
+- Commit: `d37f186` — Changes from Crucible agent
+
+- Initial project setup with `README.md`.
+- Commit: `a42e0bd` — Sample project
