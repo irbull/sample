@@ -1,0 +1,66 @@
+CHANGE LOG v4
+=============
+
+Project: HTML Tag Counter
+Date: 2026-05-30
+
+Overview
+--------
+From first commit’s modest spark,
+To charts that glow in terminal dark,
+This log records each step in rhyme,
+A tidy trail through project time.
+
+2026-05-12
+----------
+### Maintenance
+- `.gitignore` learned `foo.txt` with grace,
+  to keep test scraps out of this place.
+- Commit: `c96052e` — 🙈 Add foo.txt to the ignore file for testing
+
+2026-03-31
+----------
+### Content
+- `test.txt` arrived, concise and small,
+  a helper file to aid us all.
+- Commit: `8526b64` — Changes from Crucible agent
+
+2026-03-25
+----------
+### Documentation
+- `README.md` was shaped anew,
+  with clearer usage and category view.
+- Commit: `bbb5ea0` — Changes from Crucible agent
+
+### Output Artifacts
+- `results.txt` was added to show,
+  sample counts in terminal glow.
+- Commit: `da7d33c` — Changes from Crucible agent
+
+### Core Functionality
+- `tag-counter.ts` became the core,
+  to fetch and parse and count galore.
+- It groups each tag by type and role,
+  then prints bar charts that tell the whole.
+- Commit: `d37f186` — Changes from Crucible agent
+
+### Initial Setup
+- The project began with README light,
+  a starting point to set things right.
+- Commit: `a42e0bd` — Sample project
+
+Current Files
+-------------
+- `README.md`
+- `tag-counter.ts`
+- `results.txt`
+- `test.txt`
+- `CHANGE.txt`
+- `CHANGE-LOG-2.0.txt`
+- `CHANGE-LOG-v3.txt`
+- `CHANGE-LOG-v4.txt`
+
+Notes
+-----
+No live `.git` folder could be read,
+So `CHANGE.txt` supplied history instead.
