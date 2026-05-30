@@ -1,0 +1,57 @@
+CHANGE LOG 2.0
+================
+
+Project: HTML Tag Counter
+Date: 2026-05-30
+
+Overview
+--------
+This changelog is compiled from the available project history in `/workspace/CHANGE.txt`
+and current repository files.
+
+2026-05-12
+----------
+### Maintenance
+- Added `.gitignore` entry for `foo.txt` to support test workflow cleanup.
+- Commit: `c96052e` — 🙈 Add foo.txt to the ignore file for testing
+
+2026-03-31
+----------
+### Content
+- Added `test.txt` sample text file.
+- Commit: `8526b64` — Changes from Crucible agent
+
+2026-03-25
+----------
+### Documentation
+- Updated `README.md` with project description, usage, categories, and output format.
+- Commit: `bbb5ea0` — Changes from Crucible agent
+
+### Output Artifacts
+- Added `results.txt` containing example analysis output.
+- Commit: `da7d33c` — Changes from Crucible agent
+
+### Core Functionality
+- Added `tag-counter.ts`, the Bun CLI script that:
+  - fetches a target webpage,
+  - extracts HTML tags,
+  - counts and categorizes tags,
+  - prints categorized terminal bar charts.
+- Commit: `d37f186` — Changes from Crucible agent
+
+### Initial Setup
+- Created initial project with `README.md`.
+- Commit: `a42e0bd` — Sample project
+
+Current Project Files
+---------------------
+- `README.md`
+- `tag-counter.ts`
+- `results.txt`
+- `test.txt`
+- `CHANGE.txt`
+
+Notes
+-----
+- No `.git` directory is available in the current workspace mount, so commit history
+  was sourced from `CHANGE.txt` rather than live `git log` output.
