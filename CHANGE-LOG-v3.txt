@@ -1,0 +1,65 @@
+CHANGE LOG v3
+==============
+
+Project: HTML Tag Counter
+Date: 2026-05-30
+
+Overview
+--------
+From setup spark to testing glow,
+Here’s the tale of how we grow.
+With docs, scripts, and output bright,
+Each commit stepped the tool toward light.
+
+2026-05-12
+----------
+### Maintenance
+- `.gitignore` gained `foo.txt` in line,
+  to keep test clutter out just fine.
+- Commit: `c96052e` — 🙈 Add foo.txt to the ignore file for testing
+
+2026-03-31
+----------
+### Content
+- Added `test.txt` for checks in play,
+  a simple file to pave the way.
+- Commit: `8526b64` — Changes from Crucible agent
+
+2026-03-25
+----------
+### Documentation
+- `README.md` was tuned with care,
+  with usage, categories, and output there.
+- Commit: `bbb5ea0` — Changes from Crucible agent
+
+### Output Artifacts
+- Added `results.txt` to clearly show,
+  sample tag counts in terminal glow.
+- Commit: `da7d33c` — Changes from Crucible agent
+
+### Core Functionality
+- Added `tag-counter.ts`, the heart of the show,
+  to fetch, extract, and count in a row.
+- Tags are grouped and totals displayed,
+  with bar-chart lines for views well-laid.
+- Commit: `d37f186` — Changes from Crucible agent
+
+### Initial Setup
+- The project began with `README.md` in sight,
+  a baseline commit to start things right.
+- Commit: `a42e0bd` — Sample project
+
+Current Files
+-------------
+- `README.md`
+- `tag-counter.ts`
+- `results.txt`
+- `test.txt`
+- `CHANGE.txt`
+- `CHANGE-LOG-2.0.txt`
+- `CHANGE-LOG-v3.txt`
+
+Notes
+-----
+No live `.git` data was available here to query and see,
+so source history was compiled from `CHANGE.txt` faithfully.
