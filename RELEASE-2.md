@@ -1,30 +1,44 @@
-# Release 2 — Research in View
+# Release 2 — Research Wiki in View
 
-_Snapshot of `main` at `4a53952`, reviewed 2026-08-07 with every finding true,_  
-_A compact research wiki whose notes and guides bring gathered knowledge into view._
+_Snapshot reviewed at `4a53952` on 2026-08-07,_  
+_A compact knowledge repository, with research at its core._
 
-## What’s inside
+## What this project contains
 
-- A Link River camping brief maps North Vancouver Island ground,  
-  With coordinates, nearby recreation sites, August advice, and official sources found.
-- It compares Spruce Bay, Kathleen, Three Isle, Maynard, Georgie, and Blinkhorn stays,  
-  While flagging closures, rough access, fire checks, forestry traffic, and safer travel ways.
-- A standalone HTML experience guide turns that research into a polished trip-planning page,  
-  With responsive cards, basecamp ideas, activities, checklists, and map links ready to engage.
-- An ianbull.com research summary inventories posts, notes, projects, recipes, and themes,  
-  Tracing a shift from outdoor journals to Rust, cloud, open source, and AI-native engineering streams.
-- English and German README files retain GitLab’s starter directions for collaboration and CI,  
-  While two nested camping samples exercise the wiki’s folder hierarchy.
+- Markdown is the principal format for knowledge kept in sight,
+  While one self-contained HTML guide makes trip planning bright.
+- The main research surveys `ianbull.com` from travel through AI,
+  Mapping posts, notes, projects, recipes, themes, and how they changed with time nearby.
+- Link River research locates the North Vancouver Island place,
+  Then compares nearby camps, access cautions, August plans, and trips from a practical base.
+- A styled Link River experience guide turns that research into a page,
+  With basecamps, map and official links, day trips, and an August planning stage.
+- Nested camping folders hold small sample pages for hierarchy to test,
+  While `research/research.md` remains an empty placeholder awaiting the rest.
+- English and German README files provide GitLab starter fare,
+  Though project-specific setup, ownership, and usage guidance are not yet there.
 
-## Project shape
+## Notable subject matter
 
-This is a Markdown-first knowledge collection with one self-contained HTML display,  
-No package manifest, build pipeline, automated test suite, or runtime code is in play.
+- The Ian Bull profile follows an editorial arc from outdoor stories to engineering craft,
+  Then Rust, infrastructure, open source, and AI-native workflows steer the raft.
+- The Link River material recommends nearby recreation sites instead of a namesake ground,
+  With Spruce Bay as the primary base and Kathleen or Georgie Lake around.
+- Official BC recreation records and OpenStreetMap support the travel trail,
+  While closures, wildfire rules, forestry roads, and current conditions must prevail.
 
-The empty `research/research.md` remains a placeholder awaiting prose,  
-And the stock README text still needs project-specific setup, purpose, ownership, and goals.
+## Project shape and readiness
 
-## Release character
+- This is a content repository with no application build or dependency chain,
+  No automated test suite or deployment configuration appears on the main.
+- Research pages are substantive, but the repository shell still feels young,
+  With generic READMEs, sparse samples, and no license or contribution guide among.
+- Trip details carry dates and links, yet conditions may change before the ride,
+  So readers should recheck official status, road access, and fire restrictions outside.
 
-Release 2 gathers practical travel planning and a technical publishing review,  
-A lightweight research archive whose clearest value is curated content users can pursue.
+## Release takeaway
+
+Release 2 captures a small wiki where technical and travel investigations meet,
+Pairing a deep author profile with a practical North Island camping sheet.
+Its strongest value is researched content that readers can reuse and extend,
+While clearer project documentation and content maintenance would help the next release ascend.
